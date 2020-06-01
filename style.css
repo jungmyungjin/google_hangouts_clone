@@ -1,0 +1,183 @@
+@import "chat.css";
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  background-color: palegreen;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: pink;
+  display: flex;
+  flex-direction: row;
+}
+
+nav {
+  top: 0rem;
+  left: 0rem;
+  position: fixed;
+  width: 4rem;
+  height: 100%;
+  background-color: orange;
+  text-align: center;
+}
+nav > div {
+  margin: 2rem 1rem;
+  color: white;
+  cursor: pointer;
+}
+
+header {
+  position: fixed;
+  top: 0rem;
+  height: 4rem;
+  left: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: tomato;
+}
+
+header > .logo {
+  height: 2rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+header > .profile {
+  position: fixed;
+  height: 4rem;
+  width: 8rem;
+  right: 0rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0.2rem;
+  color: white;
+  background-color: royalblue;
+}
+
+header > .profile > * {
+  padding-right: 1.5rem;
+  cursor: pointer;
+}
+
+header > .profile > .account {
+  border-radius: 50%;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: palevioletred;
+}
+
+footer {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  background: orangered;
+  height: 4rem;
+  width: 17rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer > .photographer_profile {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+  background-color: olive;
+}
+footer > span {
+  font-size: 0.9rem;
+}
+
+.chat-list {
+  position: fixed;
+  left: 4rem;
+  top: 6rem;
+  height: 100%;
+  width: 26rem;
+  border-radius: 1%;
+  margin: 1rem;
+  background-color: white;
+}
+
+.guide {
+  position: absolute;
+  top: 6rem;
+  left: 36rem;
+  width: 50%;
+  height: 25rem;
+  right: 0rem;
+  margin: 1rem;
+
+  background-color: teal;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.guide__message {
+  height: 14rem;
+  background-color: deeppink;
+}
+.guide__menu {
+  height: 11rem;
+  background-color: greenyellow;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.guide__menu > .toggles {
+  margin-right: 2rem;
+  width: 6rem;
+  background-color: magenta;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.guide__menu .icon {
+  border: white solid 0.2rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 6px 1px rgba(0, 0, 0, 0.3);
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.guide__menu span {
+  margin: 1.5rem 0rem;
+  text-align: center;
+  background-color: turquoise;
+}
+
+.guide .hello {
+  font-size: 2.5rem;
+}
+
+.guide .start-guide {
+  font-size: 1.5rem;
+}
+
+.guide span {
+  color: white;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+@media screen and (max-width: 1000px) {
+  .guide {
+    width: 30rem;
+  }
+}
